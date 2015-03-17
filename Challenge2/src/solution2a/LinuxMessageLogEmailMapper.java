@@ -10,7 +10,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 public class LinuxMessageLogEmailMapper extends Mapper<LongWritable, Text, TextPair, IntWritable> {
   public static IntWritable one = new IntWritable(1); 
-  private boolean caseSensitive; 
+  //private boolean caseSensitive; 
   
   public void setup(Context context){
 	  Configuration conf = context.getConfiguration();
